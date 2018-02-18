@@ -23,10 +23,10 @@ a {
   outline: 0; }
 
 #intro {
+  width: 100%;
   background-image: url("../../assets/img/colo.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover; }
   #intro .overlay {
     background: rgba(21, 21, 21, 0.672);
@@ -69,7 +69,10 @@ ul {
   display: flex;
   justify-content: space-around !important;
   padding-right: 15px !important; }
+  .donate li + li {
+    margin-left: 15px; }
   .donate .btn-sm {
+    box-shadow: none;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
     bottom: 10px !important;
     border-radius: 5px !important;
@@ -87,14 +90,24 @@ ul {
   text-align: center;
   border-top: 1px solid #484848; }
 
+.regions {
+  top: 30px;
+  font-weight: 700;
+  font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif; }
+  .regions li + li {
+    margin-left: 50px; }
+  .regions .icon {
+    display: flex;
+    justify-content: space-around !important; }
+
 .row {
   padding-top: 50px; }
   .row .heading2 {
     font-weight: 700;
-    font-size: 150px; }
-  .row .heading {
-    font-size: 50px;
-    font-weight: 200; }
+    font-size: 120px; }
+  .row h4 {
+    font-size: 30px;
+    font-weight: 400; }
   .row .heading,
   .row .heading2 {
     font-family: 'Liberation Sans Narrow', serif; }
@@ -108,74 +121,212 @@ ul {
   .row .btn-primary:hover {
     box-shadow: none; }
 
-section {
-  padding: 50px; }
+#attraction,
+#tours,
+#farm,
+#touch {
+  padding: 6rem 0; }
 
-.attraction .container {
-  margin: 0 auto !important;
-  padding: 15px 0px !important; }
+#attraction {
+  height: 500px; }
+  #attraction .container {
+    margin: 0 auto !important;
+    bottom: 10px; }
+  #attraction .row:after,
+  #attraction .row:before {
+    display: table;
+    content: '';
+    clear: both; }
+  #attraction .col-lg-3 {
+    float: left;
+    width: calc(100% / 4); }
+  #attraction h3 {
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 50px;
+    font-stretch: extra-expanded !important; }
+  #attraction p {
+    vertical-align: text-top;
+    float: left;
+    color: grey;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  #attraction .blue {
+    width: 100px;
+    height: 5px;
+    top: 10px !important;
+    border: none;
+    float: left; }
+  #attraction .card {
+    margin-right: 10px;
+    padding: 20px 0px;
+    height: 300px !important;
+    width: 100% !important;
+    color: transparent !important;
+    box-shadow: none !important; }
+    #attraction .card img {
+      position: relative;
+      height: 100%;
+      width: 100%; }
 
-.attraction .row:after,
-.attraction .row:before {
+#tours {
+  background-color: rgba(243, 243, 243, 0.898);
+  height: 800px; }
+  #tours .container {
+    margin: 0 auto;
+    padding: 0px 30px; }
+  #tours .row:after,
+  #tours .row:before {
+    display: table;
+    content: '';
+    clear: both; }
+  #tours .col-md-12 {
+    text-align: center;
+    width: 100%;
+    bottom: 90px; }
+  #tours .col-lg-4 {
+    float: left;
+    width: calc(100% / 3);
+    bottom: 70px; }
+  #tours .card {
+    border: none;
+    height: 300px !important;
+    box-shadow: none !important; }
+  #tours img {
+    width: 100%;
+    height: 100%; }
+  #tours h3 {
+    font-weight: 400;
+    font-size: 50px; }
+  #tours p {
+    font-weight: 400;
+    font-size: 20px;
+    color: grey;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  #tours .card__body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+    #tours .card__body b {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333333; }
+    #tours .card__body p {
+      font-size: 15px; }
+
+#farm .container {
+  margin: 0 auto;
+  padding: 0px 30px; }
+
+#farm .row:after,
+#farm .row:before {
   display: table;
   content: '';
   clear: both; }
 
-.attraction [class*='col-'] {
-  padding: 20px; }
+#farm h3 {
+  margin-bottom: 50px !important;
+  font-weight: 500;
+  font-size: 40px; }
 
-.attraction .col-lg-3 {
-  float: left;
-  width: calc(100% / 4); }
-
-.attraction h3 {
-  letter-spacing: 2px;
-  font-weight: 600;
-  font-size: 30px; }
-
-.attraction p {
-  vertical-align: text-top;
-  float: left;
+#farm p {
+  line-height: 15px;
+  margin-bottom: 10px !important;
+  font-weight: 400;
+  font-size: 15px;
   color: grey;
-  font-size: 13px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
-.attraction .blue {
+#farm .blue {
   width: 100px;
   height: 5px;
   top: 10px !important;
   border: none;
   float: left; }
 
-.attraction .card {
-  padding: 20px 0px;
-  height: 300px !important;
-  width: 100% !important;
-  color: transparent !important;
-  box-shadow: none !important; }
-  .attraction .card img {
-    height: 100%;
-    width: 100%; }
+#farm .col-lg-8 {
+  padding: 10px 20px; }
 
-.tours {
-  height: 700px;
-  background-color: grey; }
-  .tours .container {
+#farm .card {
+  border: none;
+  width: 700px !important;
+  height: 400px !important;
+  box-shadow: none !important; }
+
+#farm img {
+  width: 100%;
+  height: 100%; }
+
+#touch {
+  background-color: rgba(243, 243, 243, 0.898);
+  height: 400px; }
+  #touch .container {
     margin: 0 auto;
-    padding: 0px 0px; }
-  .tours .row:after,
-  .tours .row:before {
+    padding: 0px 30px; }
+  #touch .row:after,
+  #touch .row:before {
     display: table;
     content: '';
     clear: both; }
-  .tours [class*='col-'] {
-    padding: 10px; }
-  .tours .col-md-12 {
+  #touch .col-lg-12 {
     text-align: center;
+    width: 100%;
+    bottom: 90px; }
+  #touch h3 {
+    font-weight: 400;
+    font-size: 40px; }
+  #touch p {
+    font-weight: 400;
+    font-size: 20px;
+    color: grey;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  #touch .form-submit {
+    width: 100%;
+    max-width: 700px;
+    padding: 15px;
+    margin: 0 auto; }
+    #touch .form-submit .form-control {
+      background: #FFFFFF;
+      box-shadow: inset 0 0 2px;
+      border: 1px solid #333333;
+      width: 100%;
+      height: 40px;
+      font-size: 20px;
+      font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif; }
+    #touch .form-submit .form-control:focus {
+      z-index: 2; }
+    #touch .form-submit input[type="email"] {
+      margin-bottom: -1px;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0; }
+    #touch .form-submit label {
+      width: 200px !important; }
+    #touch .form-submit .btn-primary {
+      right: 5px;
+      bottom: 15px;
+      width: 100%; }
+
+#footer {
+  height: 600px;
+  background-color: #333333; }
+  #footer p,
+  #footer h3 {
+    color: #FFFFFF; }
+  #footer h3 {
+    font-weight: 600; }
+  #footer p {
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  #footer .list li + li {
+    margin-left: 60px; }
+  #footer .light {
+    color: #FFFFFF;
     width: 100%; }
-  .tours .col-lg-4 {
-    float: left;
-    width: calc(100% / 3); }
+  #footer .list2 {
+    border: none;
+    line-height: 18px;
+    font-size: 12px; }
+    #footer .list2 ul {
+      padding: 0;
+      margin: 0; }
 
 .btn {
   position: relative;

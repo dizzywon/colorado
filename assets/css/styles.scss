@@ -1,224 +1,415 @@
-        //COLORS
-        $brand-blue: #008DD2;
-        $brand-dark: #333333;
-        $brand-grey-o: #E1E1E1;
-        $brand-white: #FFFFFF;
-        $brand-ash: #484848;
-        $brand-grey: #4d4d4d;
-        * {
-            box-sizing: border-box;
-        }
+                        //COLORS
+                        $brand-blue: #008DD2;
+                        $brand-dark: #333333;
+                        $brand-grey-o: #E1E1E1;
+                        $brand-white: #FFFFFF;
+                        $brand-ash: #484848;
+                        $brand-grey: #4d4d4d;
+                        * {
+                            box-sizing: border-box;
+                        }
 
-        html,
-        body,
-        #intro,
-        .view {
-            height: 100%;
-        }
+                        html,
+                        body,
+                        #intro,
+                        .view {
+                            height: 100%;
+                        }
 
-        body {
-            font-family: 'Liberation Sans Narrow', serif;
-            margin: 0;
-            padding: 0;
-        }
+                        body {
+                            font-family: 'Liberation Sans Narrow', serif;
+                            margin: 0;
+                            padding: 0;
+                        }
 
-        h1,
-        h2,
-        h4 {
-            color: $brand-white;
-        }
+                        h1,
+                        h2,
+                        h4 {
+                            color: $brand-white;
+                        }
 
-        a {
-            cursor: pointer;
-            text-decoration: none;
-            outline: 0;
-        }
+                        a {
+                            cursor: pointer;
+                            text-decoration: none;
+                            outline: 0;
+                        }
 
-        #intro {
-            background-image: url('../../assets/img/colo.jpg');
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            .overlay {
-                background: rgba(21, 21, 21, 0.672);
-                color: $brand-dark;
-                height: 100%;
-                position: absolute;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-            }
-        }
+                        #intro {
+                            width: 100%;
+                            background-image: url('../../assets/img/colo.jpg');
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            .overlay {
+                                background: rgba(21, 21, 21, 0.672);
+                                color: $brand-dark;
+                                height: 100%;
+                                position: absolute;
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                left: 0;
+                            }
+                        }
 
-        .card {
-            bottom: 10% !important;
-            position: relative;
-            overflow: hidden;
-            height: 120px !important;
-            box-shadow: 50px !important;
-            border-radius: 0 !important;
-        }
+                        .card {
+                            bottom: 10% !important;
+                            position: relative;
+                            overflow: hidden;
+                            height: 120px !important;
+                            box-shadow: 50px !important;
+                            border-radius: 0 !important;
+                        }
 
-        ul {
-            margin: 0px;
-            padding: 0px;
-            list-style-type: none;
-        }
+                        ul {
+                            margin: 0px;
+                            padding: 0px;
+                            list-style-type: none;
+                        }
 
-        .region {
-            height: 60px !important;
-            padding: 15px !important;
-            display: flex;
-            justify-content: space-between;
-            b {
-                padding-left: 15px;
-                font-size: 20px !important;
-                font-family: 'Times New Roman', Times, serif;
-                font-weight: 600;
-            }
-        }
+                        .region {
+                            height: 60px !important;
+                            padding: 15px !important;
+                            display: flex;
+                            justify-content: space-between;
+                            b {
+                                padding-left: 15px;
+                                font-size: 20px !important;
+                                font-family: 'Times New Roman', Times, serif;
+                                font-weight: 600;
+                            }
+                        }
 
-        .donate {
-            display: flex;
-            justify-content: space-around !important;
-            padding-right: 15px !important;
-            .btn-sm {
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-                bottom: 10px !important;
-                border-radius: 5px !important;
-                height: 30px !important;
-                width: 95px !important;
-                p {
-                    font-size: 10px !important;
-                    font-weight: 100;
-                }
-            }
-            .btn-sm:hover {
-                box-shadow: none;
-            }
-        }
+                        .donate {
+                            display: flex;
+                            justify-content: space-around !important;
+                            padding-right: 15px !important;
+                            li + li{
+                                margin-left: 15px;
+                            }
+                            .btn-sm {
+                                box-shadow: none;
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+                                bottom: 10px !important;
+                                border-radius: 5px !important;
+                                height: 30px !important;
+                                width: 95px !important;
+                                p {
+                                    font-size: 10px !important;
+                                    font-weight: 100;
+                                }
+                            }
+                            .btn-sm:hover {
+                                box-shadow: none;
+                            }
+                        }
 
-        .light {
-            width: 95%;
-            margin: 0 auto;
-            text-align: center;
-            border-top: 1px solid $brand-ash;
-        }
+                        .light {
+                            width: 95%;
+                            margin: 0 auto;
+                            text-align: center;
+                            border-top: 1px solid $brand-ash;
+                        }
 
-        .row {
-            padding-top: 50px;
-            .heading2 {
-                font-weight: 700;
-                font-size: 150px;
-            }
-            .heading {
-                font-size: 50px;
-                font-weight: 200;
-            }
-            .heading,
-            .heading2 {
-                font-family: 'Liberation Sans Narrow', serif;
-            }
-            .btn-primary {
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-                font-weight: bold;
-                text-transform: none;
-                border-radius: 5px !important;
-                box-shadow: none;
-                background-color: $brand-blue !important
-            }
-            .btn-primary:hover {
-                box-shadow: none;
-            }
-        }
+                        .regions {
+                            top: 30px;
+                            font-weight: 700;
+                            font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+                            li+li {
+                                margin-left: 50px;
+                            }
+                            .icon {
+                                display: flex;
+                                justify-content: space-around !important;
+                            }
+                        }
 
-        section {
-            padding: 50px;
-        }
+                        .row {
+                            padding-top: 50px;
+                            .heading2 {
+                                font-weight: 700;
+                                font-size: 120px;
+                            }
+                            h4 {
+                                font-size: 30px;
+                                font-weight: 400;
+                            }
+                            .heading,
+                            .heading2 {
+                                font-family: 'Liberation Sans Narrow', serif;
+                            }
+                            .btn-primary {
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+                                font-weight: bold;
+                                text-transform: none;
+                                border-radius: 5px !important;
+                                box-shadow: none;
+                                background-color: $brand-blue !important
+                            }
+                            .btn-primary:hover {
+                                box-shadow: none;
+                            }
+                        }
 
-        .attraction {
-            .container {
-                margin: 0 auto !important;
-                padding: 15px 0px !important;
-            }
-            .row:after,
-            .row:before {
-                display: table;
-                content: '';
-                clear: both;
-            }
-            [class*='col-'] {
-                padding: 15px;
-            }
-            .col-lg-3 {
-                float: left;
-                width: calc(100% / 4);
-            }
-            h3 {
-                letter-spacing: 2px;
-                font-weight: 600;
-                font-size: 30px;
-            }
-            p {
-                vertical-align: text-top;
-                float: left;
-                color: grey;
-                font-size: 13px;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-            }
-            .blue {
-                width: 100px;
-                height: 5px;
-                top: 10px !important;
-                border: none;
-                float: left;
-            }
-            .card {
-                padding: 20px 0px;
-                height: 300px !important;
-                width: 100% !important;
-                color: transparent !important;
-                box-shadow: none !important;
-                img {
-                    height: 100%;
-                    width: 100%;
-                }
-            }
-        }
+                        #attraction,
+                        #tours,
+                        #farm,
+                        #touch {
+                            padding: 6rem 0;
+                        }
 
-        .tours {
-            height: 700px;
-            background-color: grey;
-            .container {
-                margin: 0 auto;
-                padding: 0px 0px;
-            }
-            .row:after,
-            .row:before {
-                display: table;
-                content: '';
-                clear: both;
-            }
-            [class*='col-'] {
-                padding: 10px;
-            }
-            .col-md-12 {
-                text-align: center;
-                width: 100%;
-            }
-            .col-lg-4 {
-                float: left;
-                width: calc(100% / 3);
-            }
-        }
+                        #attraction {
+                            height: 500px;
+                            .container {
+                                margin: 0 auto !important;
+                                bottom: 10px;
+                            }
+                            .row:after,
+                            .row:before {
+                                display: table;
+                                content: '';
+                                clear: both;
+                            }
+                            .col-lg-3 {
+                                float: left;
+                                width: calc(100% / 4);
+                            }
+                            h3 {
+                                letter-spacing: 2px;
+                                font-weight: 400;
+                                font-size: 50px;
+                                font-stretch: extra-expanded !important;
+                            }
+                            p {
+                                vertical-align: text-top;
+                                float: left;
+                                color: grey;
+                                font-size: 13px;
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            }
+                            .blue {
+                                width: 100px;
+                                height: 5px;
+                                top: 10px !important;
+                                border: none;
+                                float: left;
+                            }
+                            .card {
+                                margin-right: 10px;
+                                padding: 20px 0px;
+                                height: 300px !important;
+                                width: 100% !important;
+                                color: transparent !important;
+                                box-shadow: none !important;
+                                img {
+                                    position: relative;
+                                    height: 100%;
+                                    width: 100%;
+                                }
+                            }
+                        }
 
-        .btn {
-            position: relative;
-            display: inline-block;
-            box-shadow: none;
-        }
+                        #tours {
+                            background-color: rgba(243, 243, 243, 0.898);
+                            height: 800px;
+                            .container {
+                                margin: 0 auto;
+                                padding: 0px 30px;
+                            }
+                            .row:after,
+                            .row:before {
+                                display: table;
+                                content: '';
+                                clear: both;
+                            }
+                            .col-md-12 {
+                                text-align: center;
+                                width: 100%;
+                                bottom: 90px;
+                            }
+                            .col-lg-4 {
+                                float: left;
+                                width: calc(100% / 3);
+                                bottom: 70px;
+                            }
+                            .card {
+                                border: none;
+                                height: 300px !important;
+                                box-shadow: none !important;
+                            }
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                            h3 {
+                                font-weight: 400;
+                                font-size: 50px;
+                            }
+                            p {
+                                font-weight: 400;
+                                font-size: 20px;
+                                color: grey;
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            }
+                            .card__body {
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                b {
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                    color: $brand-dark;
+                                }
+                                p {
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+
+                        #farm {
+                            .container {
+                                margin: 0 auto;
+                                padding: 0px 30px;
+                            }
+                            .row:after,
+                            .row:before {
+                                display: table;
+                                content: '';
+                                clear: both;
+                            }
+                            h3 {
+                                margin-bottom: 50px !important;
+                                font-weight: 500;
+                                font-size: 40px;
+                            }
+                            p {
+                                line-height: 15px;
+                                margin-bottom: 10px !important;
+                                font-weight: 400;
+                                font-size: 15px;
+                                color: grey;
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            }
+                            .blue {
+                                width: 100px;
+                                height: 5px;
+                                top: 10px !important;
+                                border: none;
+                                float: left;
+                            }
+                            .col-lg-8 {
+                                padding: 10px 20px;
+                            }
+                            .card {
+                                border: none;
+                                width: 700px !important;
+                                height: 400px !important;
+                                box-shadow: none !important;
+                            }
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        #touch {
+                            background-color: rgba(243, 243, 243, 0.898);
+                            height: 400px;
+                            .container {
+                                margin: 0 auto;
+                                padding: 0px 30px;
+                            }
+                            .row:after,
+                            .row:before {
+                                display: table;
+                                content: '';
+                                clear: both;
+                            }
+                            .col-lg-12 {
+                                text-align: center;
+                                width: 100%;
+                                bottom: 90px;
+                            }
+                            h3 {
+                                font-weight: 400;
+                                font-size: 40px;
+                            }
+                            p {
+                                font-weight: 400;
+                                font-size: 20px;
+                                color: grey;
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            }
+                            .form-submit {
+                                width: 100%;
+                                max-width: 700px;
+                                padding: 15px;
+                                margin: 0 auto;
+                                .form-control {
+                                    background: $brand-white;
+                                    box-shadow: inset 0 0 2px;
+                                    border: 1px solid $brand-dark;
+                                    width: 100%;
+                                    height: 40px;
+                                    font-size: 20px;
+                                    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+                                }
+                                .form-control:focus {
+                                    z-index: 2;
+                                }
+                                input[type="email"] {
+                                    margin-bottom: -1px;
+                                    border-bottom-right-radius: 0;
+                                    border-bottom-left-radius: 0;
+                                }
+                                label {
+                                    width: 200px !important;
+                                }
+                                .btn-primary {
+                                    right: 5px;
+                                    bottom: 15px;
+                                    width: 100%;
+                                }
+                            }
+                        }
+
+                        #footer {
+                            height: 600px;
+                            background-color: $brand-dark;
+                            p,
+                            h3 {
+                                color: $brand-white;
+                            }
+                            h3 {
+                                font-weight: 600;
+                            }
+                            p {
+                                font-weight: 500;
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            }
+                            .list {
+                                li+li {
+                                    margin-left: 60px;
+                                }
+                            }
+                            .light {
+                                color: $brand-white;
+                                width: 100%;
+                            }
+                            .list2 {
+                                border: none;
+                                line-height: 18px;
+                                font-size: 12px;
+                                ul {
+                                    padding: 0;
+                                    margin: 0;
+                                }
+                            }
+                        }
+
+                        .btn {
+                            position: relative;
+                            display: inline-block;
+                            box-shadow: none;
+                        }
