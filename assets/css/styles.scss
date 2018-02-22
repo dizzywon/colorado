@@ -183,6 +183,7 @@
                     .box {
                         height: 250px;
                         width: 250px;
+                        position: relative;
                         h3,
                         p {
                             line-height: 1.2;
@@ -197,18 +198,27 @@
                             font-size: 15px;
                             color: grey;
                         }
+
                         .blue {
-                            margin-left: 0;
+                            margin-left: none;
                             background: $brand-blue;
                             height: 5px;
                             border: none;
                             width: 100px;
                         }
-                        .img-fluid {
+                        img {
                             height: 100%;
                             width: 100%;
-                            p {
-                                margin: 0 auto;
+                        }
+                        .bottom-left {
+                            position: absolute;
+                            bottom: 8px;
+                            left: 16px;
+                            p{
+                                color: $brand-white;
+                                font-weight: 700;
+                                line-height: none;
+                                margin-bottom: 20px;
                             }
                         }
                     }
