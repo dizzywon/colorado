@@ -32,40 +32,12 @@ p {
 
 ol,
 ul {
-  list-style: none; }
+  list-style-type: none; }
 
 a {
   cursor: pointer;
   text-decoration: none;
   outline: 0; }
-
-#intro {
-  height: 100%;
-  background-image: url("../../assets/img/colo.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.overlay {
-  background: rgba(21, 21, 21, 0.672);
-  color: #333333;
-  height: 100%; }
-  .overlay .columns {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 250px; }
-  .overlay .column h2,
-  .overlay .column h3 {
-    color: #FFFFFF; }
-  .overlay .column h2 {
-    font-size: 120px;
-    font-weight: 700;
-    text-transform: uppercase; }
-  .overlay .column h3 {
-    font-size: 50px;
-    font-weight: 500; }
 
 .container {
   width: 90%;
@@ -79,6 +51,90 @@ a {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: wrap; }
+
+#intro {
+  height: 100%;
+  background-image: url("../../assets/img/colo.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.overlay {
+  color: #333333;
+  height: 100%; }
+  .overlay .flex_container {
+    width: 90%;
+    margin: 0 auto; }
+    .overlay .flex_container .row {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: wrap; }
+      .overlay .flex_container .row .column {
+        flex: 0 0 100%; }
+      .overlay .flex_container .row .box {
+        background: #FFFFFF;
+        width: 1220px;
+        height: 130px; }
+        .overlay .flex_container .row .box .list1 {
+          display: flex;
+          justify-content: space-between; }
+          .overlay .flex_container .row .box .list1 h3 {
+            font-size: 25px; }
+          .overlay .flex_container .row .box .list1 li {
+            margin-top: 20px; }
+          .overlay .flex_container .row .box .list1 .donate {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 35px; }
+            .overlay .flex_container .row .box .list1 .donate li + li {
+              margin-right: 20px; }
+            .overlay .flex_container .row .box .list1 .donate .myButton {
+              margin-right: 20px;
+              border: none;
+              height: 25px;
+              width: 60px;
+              background-color: #333333;
+              border-radius: 3px;
+              display: inline-block;
+              cursor: pointer;
+              color: #ffffff;
+              font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+              font-size: 12px;
+              font-weight: 400;
+              text-align: center; }
+        .overlay .flex_container .row .box .light {
+          width: 93%;
+          border: none;
+          height: 2px;
+          background: #E1E1E1; }
+        .overlay .flex_container .row .box .list2 {
+          display: flex;
+          justify-content: space-between; }
+          .overlay .flex_container .row .box .list2 p {
+            font-size: 13px;
+            font-weight: 700; }
+          .overlay .flex_container .row .box .list2 li {
+            margin-left: 20px;
+            margin-right: 50px; }
+  .overlay .columns {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px; }
+  .overlay .column h2,
+  .overlay .column h3 {
+    color: #FFFFFF; }
+  .overlay .column h2 {
+    font-size: 120px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .overlay .column h3 {
+    font-size: 50px;
+    font-weight: 500; }
 
 #attraction .column {
   flex: 0 0 25%;

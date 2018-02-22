@@ -45,13 +45,28 @@
 
                 ol,
                 ul {
-                    list-style: none;
+                    list-style-type: none;
                 }
 
                 a {
                     cursor: pointer;
                     text-decoration: none;
                     outline: 0;
+                }
+
+                .container {
+                    width: 90%;
+                    margin: 0 auto;
+                    padding: 50px 0;
+                }
+
+                .row {
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-flex-flow: wrap;
                 }
 
                 #intro {
@@ -63,15 +78,85 @@
                 }
 
                 .overlay {
-                    background: rgba(21, 21, 21, 0.672);
                     color: $brand-dark;
                     height: 100%;
+                    .flex_container {
+                        width: 90%;
+                        margin: 0 auto;
+                        .row {
+                            display: -webkit-box;
+                            display: -moz-box;
+                            display: -ms-flexbox;
+                            display: -webkit-flex;
+                            display: flex;
+                            -webkit-flex-flow: wrap;
+                            .column {
+                                flex: 0 0 100%;
+                            }
+                            .box {
+                                background: $brand-white;
+                                width: 1220px;
+                                height: 130px;
+                                .list1 {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    h3 {
+                                        font-size: 25px;
+                                    }
+                                    li {
+                                        margin-top: 20px;
+                                    }
+                                    .donate {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        margin-right: 35px;
+                                        li+li {
+                                            margin-right: 20px;
+                                        }
+                                        .myButton {
+                                            margin-right: 20px;
+                                            border: none;
+                                            height: 25px;
+                                            width: 60px;
+                                            background-color: $brand-dark;
+                                            border-radius: 3px;
+                                            display: inline-block;
+                                            cursor: pointer;
+                                            color: #ffffff;
+                                            font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+                                            font-size: 12px;
+                                            font-weight: 400;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+                                .light {
+                                    width: 93%;
+                                    border: none;
+                                    height: 2px;
+                                    background: $brand-grey-o;
+                                }
+                                .list2 {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    p {
+                                        font-size: 13px;
+                                        font-weight: 700;
+                                    }
+                                    li {
+                                        margin-left: 20px;
+                                        margin-right: 50px;
+                                    }
+                                }
+                            }
+                        }
+                    }
                     .columns {
                         display: flex;
                         justify-content: center;
                         text-align: center;
                         margin: 0 auto;
-                        padding-top: 250px;
+                        padding-top: 50px;
                     }
                     .column {
                         h2,
@@ -88,21 +173,6 @@
                             font-weight: 500;
                         }
                     }
-                }
-
-                .container {
-                    width: 90%;
-                    margin: 0 auto;
-                    padding: 50px 0;
-                }
-
-                .row {
-                    display: -webkit-box;
-                    display: -moz-box;
-                    display: -ms-flexbox;
-                    display: -webkit-flex;
-                    display: flex;
-                    -webkit-flex-flow: wrap;
                 }
 
                 #attraction {
