@@ -80,38 +80,91 @@ a {
   display: flex;
   -webkit-flex-flow: wrap; }
 
-.attraction .column {
+#attraction .column {
   flex: 0 0 25%;
   padding: 20px; }
 
-.attraction .box {
+#attraction .box {
   height: 250px;
   width: 250px; }
-  .attraction .box img {
+  #attraction .box h3,
+  #attraction .box p {
+    line-height: 1.2; }
+  #attraction .box h3 {
+    font-weight: 500;
+    font-size: 40px; }
+  #attraction .box p {
+    margin-top: 30px;
+    font-weight: 200;
+    font-size: 15px;
+    color: grey; }
+  #attraction .box .blue {
+    margin-left: 0;
+    background: #008DD2;
+    height: 5px;
+    border: none;
+    width: 100px; }
+  #attraction .box .img-fluid {
     height: 100%;
     width: 100%; }
+    #attraction .box .img-fluid p {
+      margin: 0 auto; }
 
 #tours {
-  background: #d1d1d1; }
+  background: #f5f5f5; }
   #tours .column12 {
     flex: 0 0 100%;
     text-align: center; }
+    #tours .column12 h3 {
+      margin-top: 40px;
+      font-weight: 500;
+      font-size: 50px; }
+    #tours .column12 p {
+      font-weight: 400;
+      font-size: 22px;
+      color: grey; }
   #tours .column {
     flex: 0 0 calc(100% / 3);
     padding: 30px; }
   #tours .box {
-    height: 300px;
+    height: 250px;
     width: 100%; }
     #tours .box img {
       height: 100%;
       width: 100%; }
+  #tours .card__body h3,
+  #tours .card__body p {
+    margin-top: 20px;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.2; }
+  #tours .card__body h3 {
+    font-weight: 700;
+    font-size: 20px; }
+  #tours .card__body p {
+    font-weight: 200;
+    font-size: 15px;
+    color: grey; }
 
 #farm .column1 {
-  flex: 0 0 25%;
+  flex: 0 0 35%;
   padding: 30px; }
+  #farm .column1 h3 {
+    font-weight: 500;
+    font-size: 50px; }
+  #farm .column1 p {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    color: grey; }
+  #farm .column1 .blue {
+    margin-left: 0;
+    background: #008DD2;
+    height: 5px;
+    border: none;
+    width: 100px; }
 
 #farm .column2 {
-  flex: 0 0 75%;
+  flex: 0 0 65%;
   padding: 30px; }
   #farm .column2 .box {
     height: 400px;
@@ -120,6 +173,60 @@ a {
       height: 100%;
       width: 100%; }
 
-#touch .column12 {
-  flex: 0 0 100%;
-  text-align: center; }
+#touch {
+  background: #f5f5f5; }
+  #touch .column12 {
+    flex: 0 0 100%;
+    text-align: center; }
+    #touch .column12 h3 {
+      font-weight: 500;
+      font-size: 70px; }
+    #touch .column12 p {
+      margin-top: 20px;
+      font-weight: 400;
+      font-size: 20px;
+      color: grey; }
+    #touch .column12 .form-submit .form-control {
+      margin-top: 30px;
+      padding-left: 20px;
+      height: 50px;
+      width: 550px; }
+    #touch .column12 .myButton {
+      border: none;
+      top: 30px;
+      margin: 0 auto;
+      width: 550px;
+      background-color: #008DD2;
+      border-radius: 5px;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      padding: 13px 0px;
+      text-decoration: none; }
+      #touch .column12 .myButton :active {
+        position: relative;
+        top: 1px; }
+
+#footer {
+  background: #333333;
+  height: 600px;
+  color: #FFFFFF; }
+  #footer .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0; }
+  #footer .column12 {
+    flex: 0 0 100%; }
+  #footer .column12 {
+    flex: 0 0 100%; }
+    #footer .column12 ul {
+      display: flex;
+      justify-content: space-around; }
+  #footer .column3 {
+    flex: 0 0 25%;
+    align-items: center;
+    line-height: 2;
+    font-size: 15px; }
