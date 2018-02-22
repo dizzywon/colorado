@@ -66,7 +66,7 @@
                     display: -ms-flexbox;
                     display: -webkit-flex;
                     display: flex;
-                    -webkit-flex-flow: wrap;
+                    flex: wrap;
                 }
 
                 #intro {
@@ -89,7 +89,7 @@
                             display: -ms-flexbox;
                             display: -webkit-flex;
                             display: flex;
-                            -webkit-flex-flow: wrap;
+                            flex: wrap;
                             .column {
                                 flex: 0 0 100%;
                             }
