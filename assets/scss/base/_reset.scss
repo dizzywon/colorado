@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#intro,
+.view {
+    height: 100vh;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    outline: 0;
+}
+
+@import 'assets/scss/modules/_container.scss';
+@import 'assets/scss/modules/_row.scss';

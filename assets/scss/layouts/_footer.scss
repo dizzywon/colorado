@@ -1,0 +1,26 @@
+#footer {
+    background: $brand-dark;
+    height: 600px;
+    color: $brand-white;
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+    .column12 {
+        flex: 0 0 100%;
+    }
+    .column12 {
+        flex: 0 0 100%;
+        ul {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    .column3 {
+        flex: 0 0 25%;
+        align-items: center;
+        line-height: 2;
+        font-size: 15px;
+    }
+}

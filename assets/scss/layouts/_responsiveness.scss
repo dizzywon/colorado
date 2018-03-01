@@ -1,0 +1,29 @@
+@media screen and (max-width: 800px) and (min-width: 480px) {
+    .row {
+        flex-direction: column;
+    }
+    #intro,
+    .column,
+    .column12,
+    .column1,
+    .column3 {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) and (max-width: 480px) {
+    .row {
+        flex-direction: column;
+    }
+    #intro,
+    .column,
+    .column12,
+    .column1,
+    .column3 {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
