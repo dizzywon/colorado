@@ -1,12 +1,11 @@
 #attraction {
-    .column {
-        flex: 0 0 25%;
-        padding: 20px;
-    }
+    margin-top: 20px;
     .box {
-        height: 250px;
-        width: 250px;
-        position: relative;
+        float: left;
+        width: 25%;
+        padding: 20px;
+        height: 300px;
+        width: 300px;
         h3,
         p {
             line-height: 1.2;
@@ -34,7 +33,7 @@
         }
         .bottom-left {
             position: absolute;
-            bottom: 8px;
+            margin-bottom: 8px;
             left: 16px;
             p {
                 color: $brand-white;
@@ -144,33 +143,23 @@
             font-size: 20px;
             color: grey;
         }
-        .form-submit {
-            .form-control {
-                margin-top: 30px;
-                padding-left: 20px;
-                height: 50px;
-                width: 550px;
-            }
+        form{
+            margin-top: 20px;
         }
-        .myButton {
-            border: none;
-            top: 30px;
-            margin: 0 auto;
-            width: 550px;
-            background-color: $brand-blue;
-            border-radius: 5px;
-            display: inline-block;
-            cursor: pointer;
-            color: #ffffff;
-            font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 15px;
-            font-weight: 500;
-            padding: 13px 0px;
-            text-decoration: none;
-             :active {
-                position: relative;
-                top: 1px;
-            }
+        input[type="email"]{
+            padding: 4px;
+            height: 50px;
+            width: 500px;
+        }
+        .myButton{
+            margin-top: 10px;
+            height: 40px;
+            width: 500px;
+            background: $brand-blue;
+            border: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: $brand-white;
         }
     }
 }
