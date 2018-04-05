@@ -43,8 +43,7 @@ a {
 .container {
   width: 90%;
   margin: auto;
-  overflow: hidden;
-  padding: 50px 0; }
+  overflow: hidden; }
 
 section {
   padding: 50px 0; }
@@ -323,13 +322,39 @@ nav {
     line-height: 2;
     font-size: 15px; }
 
-@media (max-width: 768px) {
-  header #intro
-header .topnav,
+@media (max-width: 768px) and (min-width: 300px) {
+  header #intro header .topnav,
   header nav,
   header nav li {
     float: none;
     text-align: center;
+    width: 100%; }
+  header .image-wrap {
+    display: none; }
+  #intro .container h3 {
+    font-size: 20px;
+    font-weight: 200; }
+  #intro .container h2 {
+    font-size: 50px;
+    font-weight: 700; }
+  #attraction {
+    margin-top: -40px;
+    margin: 0 auto; }
+    #attraction .box {
+      margin-left: 10px;
+      margin-top: 20px;
+      width: 90%; }
+  #tours .column12 h3 {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 35px; }
+  #tours .column12 p {
+    font-weight: 400;
+    font-size: 17px;
+    color: grey; }
+  #touch form,
+  #touch button {
+    height: 100%;
     width: 100%; }
   .row {
     flex-direction: column; }
@@ -343,15 +368,3 @@ header .topnav,
   #intro {
     height: 100%;
     width: 100%; } }
-
-@media screen and (max-width: 600px) and (min-width: 320px) {
-  .row {
-    flex-direction: column; }
-  #intro,
-  .column,
-  .column12,
-  .column1,
-  .column3 {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%; } }
