@@ -27,10 +27,11 @@
                                 <button type="button" class="myButton"><a href="#">Donate</a></button>
                              </li>
                             <li class="form">
-                                <input class="hidden-form" type="text" placeholder="Search">
-                                    <a href="#">
+                                <input id="hidden-form" type="text" placeholder="Search">
+                                    <a href="#" onclick="displaySearch();" id="search">
                                         <i class="fa fa-search"></i>
                                     </a>
+                                    
                             </li>
                             <li>
                                 <a href="#">
@@ -239,9 +240,9 @@
                                 announcements each month.
                             </p>
                             <form>
-                                <input type="email" placeholder="Enter Email...">
+                                <input type="email" id="email" required placeholder="@yourmail.com">
                             </form>
-                            <button type="button" class="myButton">Submit</button>
+                            <button onclick="validation();" class="myButton">Submit</button>
                         </div>
                     </div>
                 </div>
@@ -330,5 +331,40 @@
             </div>
 
         </footer>
+
+
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+        <script type="text/javascript">
+            function displaySearch(){
+                document.getElementById('search').onclick = function(){
+                    if (document.getElementById('search').click){
+                        document.getElementById("hidden-form").style.display = "block";
+                    } else{
+                        document.getElementById("hidden-form").style.display = "none";
+                    };
+                }
+                document.getElementById("hidden-form").style.display = "none";
+            }
+            window.onload = function () {
+                displaySearch();
+            };
+
+
+            function validation() {
+                //swal("Good job!", "You clicked the button!", "success");
+                var email = document.getElementById('email').value;
+                
+                var atPos = email.indexOf("@");
+                var dotPos = email.lastIndexOf(".");
+                
+                if(atPos < 1 || dotPos < atPos + 2 || dotPos + 2 > email.length){
+                    swal("Oops...", "Enter Valid Email", "error");
+                } else {
+                    swal("Thank You!", "", "success");
+                }
+            }
+        </script>
+
     </body>
 </html>
